@@ -3,7 +3,7 @@ import { softShadows, Sky, Stars } from "@react-three/drei"
 import { Physics } from '@react-three/cannon';
 import { Ground } from './components/Ground';
 import { Player } from './components/Player';
-import {Model} from './components/Model'
+// import {Model} from './components/Model'
 import {FPV} from './components/FPV';
 import {Cubes} from './components/Cubes';
 import {TextureSelector} from './components/TextureSelector';
@@ -39,7 +39,7 @@ function App() {
         <FPV />
         <Physics>
           <Player />
-          <Model />
+          // <Model />
           <Cubes />
           <Ground />
         </Physics>
