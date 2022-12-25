@@ -39,7 +39,6 @@ function App() {
         <FPV />
         <Physics>
           <Player />
-          // <Model />
           <Cubes />
           <Ground />
         </Physics>
