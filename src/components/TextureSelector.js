@@ -36,8 +36,6 @@ export const TextureSelector = () => {
 		}
 	}, [setTexture, dirt, grass, glass, wood, log])
 
-
-
 	useEffect(() => {
 		const visibilityTimeout = setTimeout(() => {
 			setVisible(false)
@@ -50,14 +48,14 @@ export const TextureSelector = () => {
 
 	return visible && (
 		<div className='absolute centered texture-selector'>
-			{Object.entries(images).map(([k, src]) => {
+			{Object.entries(images).map(([k,src]) => {
 				return (<img
 					key={k}
 					src={src}
 					alt={k}
 					className={`${k === activeTexture ? 'active' : ''}`}
-				/>)
+					/>)
 			})}
 		</div>
-	)
+		)
 }

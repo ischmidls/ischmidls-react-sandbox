@@ -44,23 +44,66 @@ body {
 }
 
 .centered {
-  top: 50%;
-  left: 50%;
+  top : 50%;
+  left : 50%;
   transform: translate(-50%, -50%);
 }
+
 .cursor {
-  color: white;
+  color : white;
 }
 
 .texture-selector {
-  transform: scale(5);
+  transform: scale(2);
 }
 
 .texture-selector img.active {
-  border: 2px solid red;
+  border: 2px solid white;
+}
+
+button {
+  color: white;
+  background-color: #808080;
+  border-color:#808080;
+  font-size: 30px;
 }
 
 .menu {
-  top: 0px;
-  left: 10px;
+  /*top: 10px;
+  left: 10px;*/
+  color: white;
+/*  transparent: true;*/
+  opacity: 0.8;
+  background-color: grey;
+  padding: 30px;
+  border-radius: 20px ;
+  overflow: scroll;
+  height: 500px;
+  width: 700px;
+}
+.menu h2 {
+  color: white;
+  opacity: 0.5;
+}
+
+.exit {
+  font-size: 10px;
+  width: 30px;
+  height: 30px;
+  left: 90%;
+/*  color: white;*/
+/*  background-color: red;*/
+/*  outline-style: hidden;*/
+}
+
+.audio {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px ;
+}
+
+.audioplayer {
+  color: gray;
+  font-size: 12px;
+  width: 70%;
 }

@@ -1,11 +1,10 @@
-import { NearestFilter, TextureLoader, RepeatWrapping } from 'three'
-
+import { TextureLoader, RepeatWrapping, NearestFilter } from 'three'
 import {
-	dirtImg,
-	logImg,
-	grassImg,
-	glassImg,
-	woodImg
+		dirtImg,
+		logImg,
+		grassImg,
+		glassImg,
+		woodImg
 } from './images'
 
 const dirtTexture = new TextureLoader().load(dirtImg)

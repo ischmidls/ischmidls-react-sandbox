@@ -1,33 +1,26 @@
-# Welcome to React three fiber Minecraft
+IZAKNEW.md
+#UPDATES
+- [x] fix jumping by incorporating jump time to avoid additional jump at extrema
+- [] fix walking looking down/up vertical?
+- [] fix cursor standard position to center durring all states
+		- [] possibly circle loads while player places cursor in center
+- [x] add shaders light and shadows directional to all meshes? 
+- [x] hide save & reset in menu to access with "m"
+- [x] add control instructions and music to menu
+- [] import GLTF model & textures (probably mob , like a horse, maybe modify textures with blue sweater)
+	- [] add horse movement 
+	- [] animate horse movement
+- [] change ground from 100x100 surface mesh to 10x10x2 blocks plane
+	- [] only render visible faces
+	- [] render textures from texture sheet
+	- [] load x, y, z from storage with chunks
 
-This project is just me trying to mimic Minecraft in React.
-How i did it can be seen in this Youtube video:
-[![Video preview](https://img.youtube.com/vi/qpOZup_3P_A/0.jpg)](https://www.youtube.com/watch?v=qpOZup_3P_A)
 
-Demo: https://minecraft-freecodecamp.vercel.app/
-
-## How to play?
-
-Currently it has 5 types of blocks: Grass, Wood, Log, Glass and Dirt.
-You switch blocks with numbers 1-5 on your keyboard.
-You navigate the world with the mouse and WASD.
-You can click to add blocks and Alt+Click to remove blocks.
-You world is stored in your browsers local storage.
-
-![Preview](preview.png 'Preview')
-
-## Want to extend, develop modify?
-
-If you do so or just build a cool world. Please share it with me dbark@hey.com or https://twitter.com/barelydaniel
-
-In the project directory, you can run:
-
-### `npm install && npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NOTES
+- npm install... npm audit fix --force...npm run start
+- https://github.com/pmndrs/drei
+- https://github.com/pmndrs/react-three-fiber
+- https://github.com/pmndrs/use-cannon
+- https://github.com/facebook/create-react-app
+- https://stackoverflow.com/questions/47686345/playing-sound-in-react-js
+- horse files: https://sketchfab.com/3d-models/horse-walk-93b53ddcec414592842753d1819f3133
