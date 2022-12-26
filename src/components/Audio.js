@@ -76,7 +76,7 @@ const MultiPlayer = ({ urls }) => {
 const Player = ({ player, toggle }) => (
   <div className="audioplayer">
     <button onClick={toggle}>{player.playing ? 'Pause' : 'Play'}</button>
-    <p>{player.url}</p>
+    <p><a href="{player.url}">{player.url}</a></p>
   </div>
 )
 
