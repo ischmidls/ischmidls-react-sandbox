@@ -86,6 +86,10 @@ button {
   opacity: 0.5;
 }
 
+.menu sub {
+  font-size: 12px;
+}
+
 .exit {
   font-size: 10px;
   width: 30px;
