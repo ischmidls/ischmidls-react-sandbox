@@ -51,6 +51,8 @@ export const Menu = () => {
 		{ showMenuItem ? null : <Controls /> }
 		<hr />
 		{ showMenuItem ? null :<MultiPlayer urls={urls} /> }
+		<hr />
+		<sub>Thank you to <a href="https://github.com/danba340">Daniel Bark</a> for the tutorial</sub>
 	</div>
 	)
 }
