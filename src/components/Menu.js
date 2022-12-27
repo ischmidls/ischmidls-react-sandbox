@@ -2,14 +2,31 @@ import { useStore } from "../hooks/useStore"
 import { useKeyboard } from "../hooks/useKeyboard"
 import {useState, useEffect} from 'react'
 import  MultiPlayer from  './Audio';
+import Piano from "./piano/Piano";
 
 
 export const Menu = () => {
 	const [saveWorld, resetWorld] = useStore((state) => [state.saveWorld, state.resetWorld])
 	const [visible, setVisible] = useState(true)
-	const [showMenuItem, setShowMenuItem] = useState(false)
+	const [showMenuItemControls, setShowMenuItemControls] = useState(false)
+	const [showMenuItemAudio, setShowMenuItemAudio] = useState(false)
+	const [showMenuItemPiano, setShowMenuItemPiano] = useState(false)
 	const {menu} = useKeyboard(); 
+
 	function toggleMenu() {setVisible(prevVisible => !prevVisible)}
+	function toggleMenuItem(item) {
+		if (item === "Controls") {
+			setShowMenuItemControls(
+				prevShowMenuItemControls => !prevShowMenuItemControls)
+		} else if (item === "Audio") {
+			setShowMenuItemAudio(
+				prevShowMenuItemAudio => !prevShowMenuItemAudio)
+		} else if (item === "Piano") {
+			setShowMenuItemPiano(
+				prevShowMenuItemPiano => !prevShowMenuItemPiano)
+		}
+	}
+
 	const urls = [
 		          'https://upload.wikimedia.org/wikipedia/commons/4/4b/Fr%C3%A9d%C3%A9ric_Chopin_-_Nocturne_in_B-flat_minor%2C_Op._9%2C_No._1.ogg',
 		          'https://upload.wikimedia.org/wikipedia/commons/5/5c/Frederic_Chopin_-_Nocturne_Eb_major_Opus_9%2C_number_2.ogg',
@@ -27,10 +44,6 @@ export const Menu = () => {
 	  </div>
 	)
 
-	function toggleMenuItem() {
-		setShowMenuItem(prevShowMenuItem => !prevShowMenuItem)
-	}
-
 	// toggle menu with m key
 	useEffect(() => {
 		if (menu) {
@@ -43,16 +56,22 @@ export const Menu = () => {
 		<button className="exit" onClick={() => toggleMenu()}>X</button>
 		<h2>Take Me Back to 11/18/2011</h2>
 		<hr />
+
+		<p>World Options</p>
 		<button onClick={() => saveWorld()}>Save</button>
 		<button onClick={() => resetWorld()}>Reset</button>
-		<button onClick={() => toggleMenuItem()}>Controls</button>
-		<button onClick={() => toggleMenuItem()}>Audio</button>
 		<hr />
-		{ showMenuItem ? null : <Controls /> }
+
+		<p>More Options</p>
+		<button onClick={() => toggleMenuItem("Controls")}>Controls</button>
+		<button onClick={() => toggleMenuItem("Audio")}>Audio</button>
+		<button onClick={() => toggleMenuItem("Piano")}>Piano</button>
+
+		{ showMenuItemControls ? <div><hr /><Controls /></div> : null }
+		{ showMenuItemAudio ? <div><hr /><MultiPlayer urls={urls} /></div> : null}
+		{ showMenuItemPiano ? <div><hr /><Piano /></div> : null }
 		<hr />
-		{ showMenuItem ? null :<MultiPlayer urls={urls} /> }
-		<hr />
-		<sub>Thank you to <a href="https://github.com/danba340">Daniel Bark</a> for the tutorial</sub>
+		<sub>Thank you to <a href="https://github.com/danba340">Daniel Bark</a> and <a href="https://github.com/ganeshmani">Ganesh Mani</a> for the tutorials</sub>
 	</div>
 	)
 }

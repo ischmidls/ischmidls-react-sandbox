@@ -14,6 +14,7 @@ IZAKNEW.md
 	- [] only render visible faces
 	- [] render textures from texture sheet
 	- [] load x, y, z from storage with chunks
+- fix player collision size two blocks high && pne block wide
 
 
 # NOTES

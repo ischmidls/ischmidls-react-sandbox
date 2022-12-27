@@ -61,6 +61,7 @@ body {
   border: 2px solid white;
 }
 
+/* MENU STYLE */
 button {
   color: white;
   background-color: #808080;
@@ -69,10 +70,7 @@ button {
 }
 
 .menu {
-  /*top: 10px;
-  left: 10px;*/
   color: white;
-/*  transparent: true;*/
   opacity: 0.8;
   background-color: grey;
   padding: 30px;
@@ -80,6 +78,7 @@ button {
   overflow: scroll;
   height: 500px;
   width: 700px;
+  cursor: default !important;
 }
 .menu h2 {
   color: white;
@@ -95,11 +94,10 @@ button {
   width: 30px;
   height: 30px;
   left: 90%;
-/*  color: white;*/
-/*  background-color: red;*/
-/*  outline-style: hidden;*/
 }
 
+
+/* AUDIO STYLE */
 .audio {
   background-color: white;
   padding: 30px;
@@ -110,4 +108,54 @@ button {
   color: gray;
   font-size: 12px;
   width: 70%;
+}
+
+/* PIANO STYLE */
+.piano-container {
+  display: inline-flex;
+  border-top: 10px solid blue;
+}
+
+.piano-natural-key {
+  width: 50px;
+  height: 180px;
+  cursor: pointer;
+  background: #fafafa;
+  margin: 0 2px;
+  color: #444;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+}
+
+.piano-text {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.piano-natural-key-playing {
+  border-bottom: 10px solid blue;
+  color: blue;
+}
+
+.piano-accidental-key-wrapper {
+  position: relative;
+  width: 0;
+}
+
+.piano-accidental-key {
+  position: absolute;
+  cursor: pointer;
+  background: #444;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 120px;
+  border-radius: 0 0 3px 3px;
+  border : 3px solid #444;
+  border-top: none;
+  padding: 5px;
+  outline: none;
+  color: #dbdbdd;
 }
