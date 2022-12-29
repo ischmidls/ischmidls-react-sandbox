@@ -53,8 +53,19 @@ body {
   color : white;
 }
 
+/*.aspect-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.fifth-ratio {
+  padding-bottom: 20%
+}*/
+
 .texture-selector {
-  transform: scale(2);
+/*  transform: scale(2);*/
+/*  position: absolute;*/
+/*  top: 0;  bottom: 0;  left: 0;  right: 0;*/
 }
 
 .texture-selector img.active {
@@ -76,8 +87,8 @@ button {
   padding: 30px;
   border-radius: 20px ;
   overflow: scroll;
-  height: 500px;
-  width: 700px;
+  height: 75%;
+  width: 75%;
   cursor: default !important;
 }
 .menu h2 {
@@ -107,13 +118,13 @@ button {
 .audioplayer {
   color: gray;
   font-size: 12px;
-  width: 70%;
+  width: 75%;
 }
 
 /* PIANO STYLE */
 .piano-container {
   display: inline-flex;
-  border-top: 10px solid blue;
+  /*border-top: 10px solid black;*/
 }
 
 .piano-natural-key {
@@ -158,4 +169,12 @@ button {
   padding: 5px;
   outline: none;
   color: #dbdbdd;
+}
+
+.controller{
+  position: absolute;
+  top : 80%;
+  left : 80%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
 }

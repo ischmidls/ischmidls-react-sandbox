@@ -14,7 +14,14 @@ IZAKNEW.md
 	- [] only render visible faces
 	- [] render textures from texture sheet
 	- [] load x, y, z from storage with chunks
-- fix player collision size two blocks high && pne block wide
+- [] fix player collision size two blocks high && pne block wide
+- [] fix mouse (context?) on menu
+- [] add mobile controller/joystick
+	- NOTE: learn Typescript bc controller written in TS
+	- NOTE: learn JS class & constructor bc controller not just ReactJS Hooks
+		- NOTE: learn prototypes & inheritence
+- [x] implement React.Dimensions
+	- NOTE: only for react native, use percentages instead
 
 
 # NOTES
@@ -25,3 +32,4 @@ IZAKNEW.md
 - https://github.com/facebook/create-react-app
 - https://stackoverflow.com/questions/47686345/playing-sound-in-react-js
 - horse files: https://sketchfab.com/3d-models/horse-walk-93b53ddcec414592842753d1819f3133
+- joystick: https://github.com/elmarti/react-joystick-component

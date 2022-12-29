@@ -37,6 +37,7 @@ export const TextureSelector = () => {
 	}, [setTexture, dirt, grass, glass, wood, log])
 
 	useEffect(() => {
+		console.log("LORD HELP ME")
 		const visibilityTimeout = setTimeout(() => {
 			setVisible(false)
 		}, 2000)
@@ -46,16 +47,18 @@ export const TextureSelector = () => {
 		}
 	}, [activeTexture])
 
+	// return visible && (<div className="absolute centered"><p>LORD HELP ME</p></div>)
+
 	return visible && (
-		<div className='absolute centered texture-selector'>
-			{Object.entries(images).map(([k,src]) => {
-				return (<img
-					key={k}
-					src={src}
-					alt={k}
-					className={`${k === activeTexture ? 'active' : ''}`}
-					/>)
-			})}
-		</div>
-		)
+				<div className='absolute centered texture-selector'>
+					{Object.entries(images).map(([k,src]) => {
+						return (<img
+							key={k}
+							src={src}
+							alt={k}
+							className={`${k === activeTexture ? 'active' : ''}`}
+							/>)
+					})}
+				</div>
+	)
 }

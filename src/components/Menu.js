@@ -12,6 +12,9 @@ export const Menu = () => {
 	const [showMenuItemAudio, setShowMenuItemAudio] = useState(false)
 	const [showMenuItemPiano, setShowMenuItemPiano] = useState(false)
 	const {menu} = useKeyboard(); 
+	// const menuStyle ={
+	//  width: String(Dimensions.get('window').width * 3 / 4)
+	// }
 
 	function toggleMenu() {setVisible(prevVisible => !prevVisible)}
 	function toggleMenuItem(item) {
@@ -37,7 +40,7 @@ export const Menu = () => {
 	  <div id="results" className="search-results">
 	    <p>[w], [a], [s], [d], & [space] ..... move</p>
 		<p>[1]-[5] .................. change blocks</p>
-		<p>[click] ................... break blocks</p>
+		<p>[click] ................... place blocks</p>
 		<p>[alt + click] ............. break blocks</p>
 		<p>[m] ........................ toggle menu</p>
 		<p>[esc] .................... toggle cursor</p>
