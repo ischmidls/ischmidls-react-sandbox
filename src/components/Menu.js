@@ -57,7 +57,7 @@ export const Menu = () => {
 	return (visible &&
 	<div className="menu centered absolute">
 		<button className="exit" onClick={() => toggleMenu()}>X</button>
-		<h2>Take Me Back to 11/18/2011</h2>
+		<h2>ischmidls react sandbox</h2>
 		<hr />
 
 		<p>World Options</p>
@@ -74,7 +74,13 @@ export const Menu = () => {
 		{ showMenuItemAudio ? <div><hr /><MultiPlayer urls={urls} /></div> : null}
 		{ showMenuItemPiano ? <div><hr /><Piano /></div> : null }
 		<hr />
-		<sub>Thank you to <a href="https://github.com/danba340">Daniel Bark</a> and <a href="https://github.com/ganeshmani">Ganesh Mani</a> for the tutorials</sub>
+		<sub>
+			My Github Repo is <a href="https://github.com/ischmidls/ischmidls-react-sandbox">here</a>
+			<br />
+			Thank you to <a href="https://github.com/danba340">Daniel Bark</a> and <a href="https://github.com/ganeshmani">Ganesh Mani</a> for the tutorials
+			<br />---<br />
+			Take Me Back to 11/18/2011 {String.fromCharCode(60)}3 {String.fromCharCode(60)}3 
+		</sub>
 	</div>
 	)
 }
