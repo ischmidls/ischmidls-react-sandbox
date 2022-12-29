@@ -45,10 +45,10 @@ function App() {
           <Ground />
         </Physics>
       </Canvas>
+      <Controller />
       <div className='absolute centered cursor'>+</div>
       <TextureSelector />
       <Menu />
-      <Controller />
     </>
   );
 }

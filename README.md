@@ -1,27 +1,34 @@
 IZAKNEW.md
 #UPDATES
 - [x] fix jumping by incorporating jump time to avoid additional jump at extrema
-- [] fix walking looking down/up vertical?
-- [] fix cursor standard position to center durring all states
-		- [] possibly circle loads while player places cursor in center
+- [ ] fix walking looking down/up vertical?
+- [ ] fix cursor standard position to center durring all states
+		- [ ] possibly circle loads while player places cursor in center
 - [x] add shaders light and shadows directional to all meshes? 
 - [x] hide save & reset in menu to access with "m"
 - [x] add control instructions and music to menu
-- [] import GLTF model & textures (probably mob , like a horse, maybe modify textures with blue sweater)
-	- [] add horse movement 
-	- [] animate horse movement
-- [] change ground from 100x100 surface mesh to 10x10x2 blocks plane
-	- [] only render visible faces
-	- [] render textures from texture sheet
-	- [] load x, y, z from storage with chunks
-- [] fix player collision size two blocks high && pne block wide
-- [] fix mouse (context?) on menu
-- [] add mobile controller/joystick
+- [ ] import GLTF model & textures (probably mob , like a horse, maybe modify textures with blue sweater)
+	- [x] model component is available but throws errors 
+	- [ ] add horse movement 
+	- [ ] animate horse movement
+- [ ] change ground from 100x100 surface mesh to 10x10x2 blocks plane
+	- [ ] only render visible faces
+	- [ ] render textures from texture sheet
+	- [ ] load x, y, z from storage with chunks
+- [ ] fix player collision size two blocks high && pne block wide
+- [ ] fix mouse (context?) on menu
+- [ ] add mobile controller/joystick
 	- NOTE: learn Typescript bc controller written in TS
 	- NOTE: learn JS class & constructor bc controller not just ReactJS Hooks
 		- NOTE: learn prototypes & inheritence
-- [x] implement React.Dimensions
-	- NOTE: only for react native, use percentages instead
+	- [x] convert direction component to React Hook
+	- [ ] implement useContext Hook wrapping all App components 
+		- OR create custom hook similar to useKeyboard to set joystick direction state to exiting player movement states 
+	- [ ] hide controller when menu is visible
+- [x] implement React.Dimensions for mobile compatible UI
+	- NOTE: only for react native, so I used CSS percentage units instead
+- [ ] always show textureSelector on mobile browsers
+	- [ ] control textureSelector with touch input not just useKeyboard
 
 
 # NOTES
