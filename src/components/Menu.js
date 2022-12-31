@@ -75,7 +75,7 @@ export const Menu = () => {
 		{ showMenuItemPiano ? <div><hr /><Piano /></div> : null }
 		<hr />
 		<sub>
-			My Github Repo is <a href="https://github.com/ischmidls/ischmidls-react-sandbox">here</a>
+			My Github Repo is <a href="https://github.com/ischmidls/ischmidls-react-sandbox">here</a>; website <a href="https:/ischmidls.github.io" target="_blank">here</a>
 			<br />
 			Thank you to <a href="https://github.com/danba340">Daniel Bark</a> and <a href="https://github.com/ganeshmani">Ganesh Mani</a> for the tutorials
 			<br />---<br />
