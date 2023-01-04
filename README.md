@@ -1,5 +1,8 @@
-IZAKNEW.md
-#UPDATES
+<img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="minecraft" height="200" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="reactjs" height="200" />
+
+# UPDATES
+
 - [x] fix jumping by incorporating jump time to avoid additional jump at extrema
 - [ ] fix walking looking down/up vertical?
 - [ ] fix cursor standard position to center durring all states
