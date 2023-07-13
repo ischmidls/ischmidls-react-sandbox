@@ -13,6 +13,7 @@
 ## July 2023?
 <p>Since I enjoyed this somewhat before the architecture got out of hand, I might try to look at this again.</p>
 <b>The problems I could not fix last time include...</b>
+
 - [ ] fix walking looking down/up vertical?
 - [ ] fix cursor standard position to center durring all states
 		- [ ] possibly circle loads while player places cursor in center
