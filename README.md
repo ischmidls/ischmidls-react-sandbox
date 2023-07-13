@@ -38,7 +38,15 @@
  - [ ] always show textureSelector on mobile browsers
 	- [ ] control textureSelector with touch input not just useKeyboard
 # NOTES
-- npm install... npm audit fix --force...npm run start
+
+<p>This project requires <code><code></code></code>. I recommend <a href="https://github.com/coreybutler/nvm-windows">nvm</a> (link to WIndows, available for mac and linux)</p>
+
+- <code>nvm list</code>
+- <code>npm install</code>
+- <code>npm audit fix --force</code>
+- <code>npm run start</code>
+
+
 - https://github.com/pmndrs/drei
 - https://github.com/pmndrs/react-three-fiber
 - https://github.com/pmndrs/use-cannon
