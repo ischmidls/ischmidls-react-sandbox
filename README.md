@@ -2,14 +2,20 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="reactjs" height="200" />
 
 # UPDATES
-
+## January 4 2023
 - [x] fix jumping by incorporating jump time to avoid additional jump at extrema
-- [ ] fix walking looking down/up vertical?
-- [ ] fix cursor standard position to center durring all states
-		- [ ] possibly circle loads while player places cursor in center
 - [x] add shaders light and shadows directional to all meshes? 
 - [x] hide save & reset in menu to access with "m"
 - [x] add control instructions and music to menu
+
+- [x] implement React.Dimensions for mobile compatible UI
+	- NOTE: only for react native, so I used CSS percentage units instead
+## July 2023?
+<p>Since I enjoyed this somewhat before the architecture got out of hand, I might try to look at this again.</p>
+<b>The problems I could not fix last time include...</b>
+- [ ] fix walking looking down/up vertical?
+- [ ] fix cursor standard position to center durring all states
+		- [ ] possibly circle loads while player places cursor in center
 - [ ] import GLTF model & textures (probably mob , like a horse, maybe modify textures with blue sweater)
 	- [x] model component is available but throws errors 
 	- [ ] add horse movement 
@@ -28,12 +34,8 @@
 	- [ ] implement useContext Hook wrapping all App components 
 		- OR create custom hook similar to useKeyboard to set joystick direction state to exiting player movement states 
 	- [ ] hide controller when menu is visible
-- [x] implement React.Dimensions for mobile compatible UI
-	- NOTE: only for react native, so I used CSS percentage units instead
-- [ ] always show textureSelector on mobile browsers
+ - [ ] always show textureSelector on mobile browsers
 	- [ ] control textureSelector with touch input not just useKeyboard
-
-
 # NOTES
 - npm install... npm audit fix --force...npm run start
 - https://github.com/pmndrs/drei
