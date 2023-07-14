@@ -39,9 +39,11 @@
 	- [ ] control textureSelector with touch input not just useKeyboard
 # NOTES
 
-<p>This project requires <code><code></code></code>. I recommend <a href="https://github.com/coreybutler/nvm-windows">nvm</a> (link to WIndows, available for mac and linux)</p>
+<p>This project requires <code>npm 16</code>. To manage npm versions, I recommend <a href="https://github.com/coreybutler/nvm-windows">nvm</a> (link to WIndows, available for mac and linux)</p>
 
 - <code>nvm list</code>
+- <code>nvm use 16</code>
+- if not installed <code>nvm install 16</code>
 - <code>npm install</code>
 - <code>npm audit fix --force</code>
 - <code>npm run start</code>
