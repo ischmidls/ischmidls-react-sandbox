@@ -1,30 +1,19 @@
 import {Joystick} from 'react-joystick-component';
 import {useState, useContext} from 'react';
+import {useController} from '../hooks/useController';
 
 export const Controller = () => {
-    const [direction, setDirection] = useState("Stopped")
-
-    const _handleMove = (data) => {
-        setDirection(
-            data.direction
-        );
-    }
-
-    const _handleStop = () => {
-        setDirection(
-            "Stopped"
-        );
-    }
-
+    const { direction, handleMove, handleStop } = useController();
+  
     return (
-        <div className="controller">
-            <Joystick 
-                move={_handleMove} 
-                stop={_handleStop}
-                stickColor={"white"}
-                baseColor={"white"}
-            />
-            <p>{direction}</p>
-        </div>
+      <div className="controller">
+        <Joystick
+          move={handleMove}
+          stop={handleStop}
+          stickColor={'white'}
+          baseColor={'white'}
+        />
+        <p>{direction}</p>
+      </div>
     );
-}
+  };
