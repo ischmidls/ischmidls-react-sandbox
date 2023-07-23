@@ -17,9 +17,6 @@ function App() {
     <>
       <Canvas shadows>
         <Sky sunPosition={[0, 0, 0]} inclination={0} distance={100} azimuth={1}/>
-        
-        // EXTRA FEATURES
-
         <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={2} />
         <fog attach="fog" color="black" near={5} far={25} />
         <ambientLight intensity={0.2} />
@@ -40,7 +37,6 @@ function App() {
         // <pointLight position={[10, 30, 0]} color="hotpink" intensity={2} />
         // <pointLight position={[-10, 30, 0]} color="blue" intensity={2} />
         // <pointLight position={[0, -10, 0]} intensity={1.5} />
-
 
         <FPV />
         <Physics>
